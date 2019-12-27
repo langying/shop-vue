@@ -1,0 +1,57 @@
+.browse{
+    padding: 40px 0 0 0;
+    height:95vh;
+	
+}
+
+.browseList{
+    height:95vh;
+    
+    color: #999;
+    @include font-dpr(13px);
+    .data{
+        line-height: 0.9rem;
+        text-align: center;
+        background: #eee;
+        color: #666;
+        @include font-dpr(15px);
+    }
+    
+    .browseItem{
+        
+        background: #fff;
+        padding:0 0.3rem;
+        margin-bottom: 0.2rem;
+        .itemTop{
+            align-items: center;
+            padding: 0.25rem 0;
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 6px;
+                margin-right: 0.3rem;
+            }
+            .name{
+                @include font-dpr(16px);
+                color: #000;
+            }
+            .lb{
+                margin-top: 0.3rem;
+            }
+        }
+        .itemBottom{
+            line-height: 0.8rem;
+            @include font-dpr(13px);
+            border-top: 1px solid #eee;
+            label{
+                margin-left: 0.15rem;
+                color: #F04440;
+            }
+        }
+        
+    }
+    .browse-icon{
+		width: 3.8135rem;
+		height: 3.707rem;
+	}
+}

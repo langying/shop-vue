@@ -1,0 +1,70 @@
+.strategy{
+    padding: 40px 0 0 0;
+    height:85vh;
+    overflow: scroll;
+    .list{
+        background: #fff;
+        .item{
+            border-bottom: 1px solid #f8f8f8;
+            padding: 0.2rem 0.3rem;
+            align-items: center;
+            .icon{
+                margin-right: 0.6rem;
+                img{
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    border-radius: 50%;
+                }
+            }
+            .title{
+                @include font-dpr(18px);
+                .hot{
+                    color: #F8675D;
+                    margin-right: 0.1rem;
+                }
+            }
+            .read{
+                text-align: right;
+                color: #999;
+                margin-top: 0.3rem;
+                .num{
+                    color: #6E95CA;
+                    margin-right: 0.1rem;
+                }
+            }
+        }
+    }
+    .strategy-bottom{
+        padding: 0.4rem 0.3rem;
+        background: #fff;
+        @include font-dpr(24px);
+        .tip{
+            align-items: center;
+            margin-top: 0.2rem;
+        }
+        .icon{
+            width: 2.3735rem;
+            height: 1.667rem;
+            background: url('../../../../common/assets/images/strategy-icon.png') no-repeat;
+            background-size: cover;
+            margin-right: 0.2rem;
+        }
+        .up{
+            width: 0.2935rem;
+            height: 0.64rem;
+            background: url('../../../../common/assets/images/strategy-up.png') no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-left: 0.2rem;
+        }
+        .red{
+            color: #F8525D;
+            margin-right: 0.2rem;
+        }
+        .lb{
+            @include font-dpr(14px);
+            color: #C9C9C9;
+            margin-top: 0.2rem;
+        }
+    }
+}

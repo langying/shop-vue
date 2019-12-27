@@ -1,0 +1,86 @@
+.spread{
+    .bg{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .block{
+        padding: 8.6rem 0 0 0;
+        .cnt{
+            margin: 0 0.5rem;
+            .ipt{
+                padding: 0 1.3rem;
+                .row{
+                    border: 1px solid #50B9EE;
+                    padding: 0.15rem 0.2rem 0.15rem 0.1rem;
+                    align-items: center;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    height: 0.75rem;
+                    margin: 0.4rem 0 0 0;
+                    background: #fff;
+                    i{
+                        width: 0.7rem;
+                        height: 0.7rem;
+                        background: url('../../../../common/assets/images/spread/spread3-phone.png') no-repeat;
+                        background-size: cover;
+                    }
+                    input{
+                        width: 3rem;
+                        border: 0;
+                        @include font-dpr(14px);
+                    }
+                    input::-webkit-input-placeholder {
+                        @include font-dpr(14px);
+                        color: #999;
+                    }
+                    .code{
+                        text-align: center;
+                        color: #50B9EE;
+                        border-left: 1px solid #50B9EE;
+                        line-height: 0.7rem;
+                        width: 1.95rem;
+                        @include font-dpr(12px);
+                        &.disabled{
+                            color: #999;
+                        }
+                    }
+                }
+                .validCode{
+                    padding-left: 0.8rem !important;
+                }
+            }
+            .btn{
+                text-align: center;
+                padding: 0.6rem 0 0 0;
+                img{
+                    height: 1.2rem;
+                    margin: 0 auto;
+                }
+            }
+            .record{
+                margin: 0.6rem 0 0 0;
+                text-align: center;
+                @include font-dpr(14px);
+                color: #666;
+                p{
+                    margin: 0.2rem 0 0 0;
+                }
+            }
+        }
+    }
+    .xieyi{
+        width: 100%;
+        text-align: center;
+        transform: scale(0.95);
+        @include font-dpr(10px);
+        color: #676767;
+        margin-top: 0.1rem;
+        span{
+            color:#50B9EE;
+        }
+        
+    }
+
+    
+}

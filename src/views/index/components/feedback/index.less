@@ -1,0 +1,57 @@
+.page-wrap{
+    padding: 40px 0 0 0;
+    background: #fff;
+}
+.feedbackList{
+    margin: 0.2rem 0;
+    .feedbackItem{
+        @include font-dpr(14px);
+        width: 33.33%;
+        label{
+            display: block;
+            border-radius: 6px;
+            margin: 0.2rem 0.3rem;
+            padding: 0.25rem 0;
+            text-align: center;
+            background: #e8e8e8;
+            color: #666;
+           
+        }
+        &.active{
+            label{
+                background: #FE5560;
+                color: #fff;
+            }
+        }
+    }
+}
+.remark{
+    border: 1px solid #eee;
+    margin: 0 0.3rem;
+    outline:none;resize:none;
+    min-height: 5rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    @include font-dpr(14px);
+    overflow-y:auto;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    a{
+        width: 95%;
+        line-height: 1.2rem;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+    }
+}
+.hotline{
+    margin-top: 3rem;
+    line-height: 1rem;
+    text-align: center;
+    width: 100%;
+    @include font-dpr(14px);
+    color: #999;
+    
+}

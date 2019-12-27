@@ -1,0 +1,91 @@
+.page-wrap{
+    height: 100vh;
+}
+.aboutUs{
+    height: 100%;
+    text-align: center;
+    position: relative;
+    .aboutUs-top{
+        color: #8D8D8D;
+        @include font-dpr(16px);
+        padding: 2.4rem 0 0 0;
+        .logo{
+            width: 2.16rem;
+            height: 2.16rem;
+            background: url('../../../../common/assets/images/logo.png') no-repeat;
+            background-size: cover;
+            margin: 0 auto 0.5rem auto;
+        }
+        .name{
+            padding: 0 0 0.5rem 0;
+            span{
+                // @include font-dpr(18px);
+                width: 4.72rem;
+                height: 0.547rem;
+                background: url('../../../../common/assets/images/logo-name.png') no-repeat;
+                background-size: cover;
+                position: relative;
+                display: inline-block;
+                &::before{
+                    position: absolute;
+                    content:'';
+                    width: 110%;
+                    height: 1px;
+                    left: -5%;
+                    bottom: -0.3rem;
+                    background: linear-gradient(90deg, #eee 0%, #d0d0d0 50%, #eee 100%);
+                }
+            }
+            
+           
+        }
+    }
+    .aboutUs-bottom{
+        position: absolute;
+        bottom: 0.2rem;
+        left: 0;
+        width: 100%;
+        color: #AFAFAF;
+        .row{
+            @include font-dpr(14px);
+            margin-left: 18%;
+            color: #434343;
+            margin-top: 0.1rem;
+            align-items: center;
+            label{
+                display: inline-block;
+            }
+            .lb{
+                text-align: left;
+                width: 3rem;
+            }
+        }
+        .copyright{
+            margin-top: 0.3rem;
+        }
+        i{
+            display: inline-flex;
+        }
+        .website{
+            width: 0.44rem;
+            height: 0.44rem;
+            background: url('../../../../common/assets/images/website.png') no-repeat;
+            background-size: cover;
+            margin-right: 0.2rem;
+        }
+        .phone{
+            width: 0.44rem;
+            height: 0.44rem;
+            background: url('../../../../common/assets/images/phone.png') no-repeat;
+            background-size: cover;
+            margin-right: 0.2rem;
+        }
+        .weixin{
+            width: 0.547rem;
+            height: 0.427rem;
+            background: url('../../../../common/assets/images/weixin.png') no-repeat;
+            background-size: cover;
+            margin-right: 0.1rem;
+        }
+    }
+}

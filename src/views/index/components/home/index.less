@@ -1,0 +1,132 @@
+.index{
+	
+	.swipe-wrapper{
+        width: 100%;
+        height: 3.65rem;
+	}
+    .item{
+		img{
+			width: 100%;
+			height: 100%;
+		}	
+	}
+	.home{
+		height: 92vh;
+		
+		.icon-list{
+			background: #fff;
+			padding: 0.1rem 0;
+			.icon-item{
+				text-align: center;
+				.img{
+					height: 0.9rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					i{
+						width: 0.8rem;
+						height: 0.8rem;
+						display: inline-flex;
+					}
+				}
+				.lb{
+					margin-top: 0.05rem;
+				}
+				.home-icon1{
+					background: url('../../../../common/assets/images/home-icon1.png') no-repeat;
+					background-size: cover;
+				}
+				.home-icon2{
+					background: url('../../../../common/assets/images/home-icon2.png') no-repeat;
+					background-size: cover;
+				}
+				.home-icon3{
+					background: url('../../../../common/assets/images/home-icon3.png') no-repeat;
+					background-size: cover;
+				}
+				.home-icon4{
+					background: url('../../../../common/assets/images/home-icon4.png') no-repeat;
+					background-size: cover;
+				}
+				.home-icon5{
+					width: 0.9rem !important;
+					height: 0.8rem !important;
+					background: url('../../../../common/assets/images/home-icon5.png') no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+		.home-block{
+			padding: 0.07rem 0.15rem;
+			.title{
+				height: 0.8rem;
+				line-height: 1.05rem;
+				position: relative;
+				padding-left: 0.8rem;
+				color: #6B6B6B;
+				@include font-dpr(14px);
+				font-weight: 600;
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0.4rem;
+					width: 0.22rem;
+					height: 60%;
+					border-radius: 1rem;
+					top: 18%;
+					background: #000;
+					background:-webkit-linear-gradient(bottom,#F7A525,#F9D05A);
+					background:-o-linear-gradient(bottom,#F7A525,#F9D05A);
+					background:-moz-linear-gradient(bottom,#F7A525,#F9D05A);
+					background:linear-gradient(to top,#F7A525,#F9D05A);
+				}
+			}
+			.item{
+				width: 50%;
+				align-items: center;
+				background: transparent;
+				.block{
+					background: #fff;
+					margin: 0.05rem 0.15rem;
+					padding:0.1rem 0.2rem;
+					align-items: center;
+					box-shadow: #ddd 0px 3px 10px;
+					border-radius: 4px;
+				}
+				.img{
+					img{
+						width: 1.1rem;
+						height: 1.1rem;
+						border-radius: 50%;
+						margin: 0 0.3rem 0 0;
+					}
+				}
+				.info{
+					.name{
+						color: #000;
+						@include font-dpr(14px);
+						font-weight: 500;
+						line-height: 0.5rem;
+					}
+					.lb{
+						@include font-dpr(12px);
+						color: #999;
+						line-height: 0.6rem;
+						label{
+							color: #F8675D;
+						}
+					}
+				}
+			}
+		}
+		.hot{
+			display: inline-block;
+			width: 0.4935rem;
+			height: 0.52rem;
+			background: url('../../../../common/assets/images/hot.png') no-repeat;
+			background-size: cover;
+			margin-right: 0.2rem;
+		}
+		
+	}
+}

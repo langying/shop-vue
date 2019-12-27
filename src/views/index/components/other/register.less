@@ -1,0 +1,71 @@
+.register{
+    padding: 40px 0 0 0;
+    .ipt{
+        background: #fff;
+        margin-top: 0.2rem;
+        .row{
+            line-height: 1.5rem;
+            border-top:1px solid #F8F8F8;
+            @include font-dpr(14px);
+            align-items: center;
+            padding:0 0.3rem;
+            .lb{
+                width: 1.7rem;
+            }
+            input{
+                border: 0;
+                background: transparent;
+            }
+            .get{
+                display: flex;
+                align-items: center;
+                a{
+                    width: 1.5rem;
+                    line-height: 0.7rem;
+                    border-radius: 6px;
+                    @include font-dpr(12px);
+                    text-align: center;
+                }
+                .code{
+                    border-radius: 6px;
+                    background: #eee;
+                    color: #999;
+                }
+            }
+            &:nth-child(1){
+                border-top:0;
+            }
+            .eye{
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.5rem;
+                &.open{
+                    background: url('../../../../common/assets/images/eye-open.png') 100% 100% no-repeat;
+                    background-size: cover;
+                }
+                &.close{
+                    background: url('../../../../common/assets/images/eye-close.png') 100% 100% no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin: 1.3rem 0 0.3rem 0;
+        a{
+            width: 95%;
+            line-height: 1.2rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+    }
+    .tip{
+        text-align: center;
+        a{
+            color: #999;
+        }
+        @include font-dpr(12px);
+    }
+}

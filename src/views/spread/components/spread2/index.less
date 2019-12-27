@@ -1,0 +1,199 @@
+.spread{
+    .bg{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .block{
+        padding: 7rem 0 0 0;
+        .cnt{
+            background: #fff;
+            margin: 0 0.5rem;
+            border-radius: 10px;
+            border-top: 3px solid #023CE1;
+            padding:0.2rem 0.5rem;
+            .title{
+                line-height: 1rem;
+                align-items: center;
+                .col{
+                    display: flex;
+                    i{
+                        display: inline-block;
+                        width: 100%;
+                        border-bottom: 1px dashed #B2B2B2;
+                        height: 1px;
+                    }
+                }
+                .lb{
+                    margin: 0 0.2rem;
+                    @include font-dpr(16px);
+                    letter-spacing:4px;
+                    font-weight: 600;
+                    color: #000;
+                }
+                
+            }
+            .tip{
+                text-align: center;
+                color: #666666;
+                margin: 0.2rem 0 0.3rem 0;
+                i{
+                    display: block;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    margin: 0 auto;
+                }
+                .icon1{
+                    background: url('../../../../common/assets/images/spread/icon1.png') no-repeat;
+                    background-size: cover;
+                }
+                .icon2{
+                    background: url('../../../../common/assets/images/spread/icon2.png') no-repeat;
+                    background-size: cover;
+                }
+                .icon3{
+                    background: url('../../../../common/assets/images/spread/icon3.png') no-repeat;
+                    background-size: cover;
+                }
+                .name{
+                    font-family: 'Courier New', Courier, monospace;
+                    @include font-dpr(14px);
+                    font-weight: 600;
+                    letter-spacing:2px;
+                    color: #000;
+                    margin: 0.2rem 0 0.1rem 0;
+                }
+                .lb{
+                    line-height: 0.5rem;
+                    @include font-dpr(10px);
+                }
+            }
+            .ipt{
+                border: 1px solid #D5D5D5;
+                border-radius: 0.37rem;
+                overflow: hidden;
+                padding: 0.2rem 0.5rem;
+                i{
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    display: inline-flex;
+                    background: url('../../../../common/assets/images/spread/phone-icon.png');
+                    background-size: cover;
+                    margin-right: 0.2rem;
+                }
+                input{
+                    border: 0;
+                    @include font-dpr(14px);
+                }
+                input::-webkit-input-placeholder {
+                    @include font-dpr(14px);
+                    color: #999;
+                    
+                }
+            }
+            .btn{
+                text-align: center;
+                background: #1766E3;
+                color: #fff;
+                line-height: 0.8rem;
+                border-radius:6px; 
+                margin-top: 0.3rem;
+                border: 1px solid #57595C;
+                @include font-dpr(16px);
+                letter-spacing:4px;
+            }
+            .xieyi{
+                @include font-dpr(10px);
+                text-align: center;
+                color: #676767;
+                margin: 0.3rem 0 0.2rem 0;
+                span{
+                    color: #1766E3;
+                }
+            }
+        }
+    }
+
+    .modal{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0,0.3);
+       
+        .modal-cnt{
+            position: relative;
+            width: 70%;
+            background: #fff;
+            padding: 0.5rem 0.3rem;
+            border-radius: 6px;
+            box-shadow:2px 2px 5px #999;
+            margin: 6.2rem auto 0 auto;
+            .modal-close{
+                position: absolute;
+                right: 0.5rem;
+                top: 0.3rem;
+                width: 0.387rem;
+                height: 0.387rem;
+                background: url('../../../../common/assets/images/spread/close.png');
+                background-size: cover;
+            }
+            .modal-title{
+                text-align: center;
+                @include font-dpr(16px);
+                color: #000;
+                letter-spacing:1px;
+                font-weight: 600;
+            }
+            .modal-ipt{
+                border: 1px solid #1766E3;
+                overflow: hidden;
+                border-radius: 6px;
+                padding: 0.2rem 0.3rem;
+                margin: 0.5rem 0 0 0;
+                input{
+                    border: 0;
+                    width:1px;
+                    @include font-dpr(14px);
+                }
+                input::-webkit-input-placeholder {
+                    @include font-dpr(14px);
+                    color: #999;   
+                }
+                .code{
+                    background: #1766E3;
+                    color: #fff;
+                    padding: 0.15rem 0.3rem;
+                    border-radius: 0.4rem;
+                    label{
+                        color: #FF8500;
+                    }
+                }
+            }
+            .modal-lb{
+                text-align: center;
+                @include font-dpr(16px);
+                letter-spacing:1px;
+                margin: 0.1rem 0 0 0;
+                font-weight: 600;
+                p{
+                    line-height: 0.8rem;
+                }
+            }
+            .modal-btn{
+                background: #1766E3;
+                text-align: center;
+                display: block;
+                color: #fff;
+                line-height: 0.9rem;
+                border-radius: 6px;
+                margin: 0.5rem 0 0 0;
+                @include font-dpr(16px);
+            }
+        }
+        
+        
+    }
+}
