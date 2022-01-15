@@ -105,7 +105,7 @@
     "sass-loader": "~6.0.6",
     "scrollreveal": "^3.3.6",
     "semver": "~5.4.1",
-    "shelljs": "~0.7.8",
+    "shelljs": "~0.8.5",
     "url-loader": "~0.6.2",
     "vinyl-buffer": "~1.0.0",
     "vue-loader": "~13.5.0",
